@@ -1,0 +1,130 @@
+body {
+	background:#f9e933;
+	font-size: 100%;
+}
+header {
+	background: white;
+	padding: 10px;
+	margin-bottom: 2px; 
+	
+}
+header h1 {
+	float: left;
+	width: 500px;
+	font-size: 2em;
+	font-family: Verdana;
+}
+header nav {
+	float: right;
+	width: 355px;
+	font-weight: bold;
+}
+main {
+	background: white;	
+}
+
+footer .container .contact {
+	float: left;
+	width: 500px;
+}
+footer .container .sitemap {
+	float: right;
+	width: 355px;
+}
+
+header .container, main .container, footer .container {
+	max-width: 855px;
+	margin: auto;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+}
+p, nav, ul  {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.2em;
+}
+header .container {
+	padding: 35px;
+}
+footer h5, p {
+	padding: 4px;
+}
+a  {
+	color: red;
+	text-decoration: none;
+
+}
+a:hover {
+	text-decoration: underline;
+	
+}
+main {
+	min-height: 450px;
+
+}
+main .container{
+	padding-top: 13px;
+
+}
+
+.tabs a span{
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 150px;
+	height: 30px;
+	margin-right: 10px;
+	text-align: center;
+	font: 24px Arial;
+	font-weight: bold;
+	background: #ddd;
+	padding: 5px;
+}
+.tabs a span.active{
+	background: #eee;
+}
+
+.content ul {
+	list-style-type: circle;
+	padding: 15px;
+}
+.content input {
+	width: 240px;
+	height: 30px;
+	margin-top:10px;
+
+}
+.content button {
+	width: 35px;
+	height: 35px;
+	margin-left: 3px;
+
+	border-radius: 5px;
+	background: red;
+	font-weight: bold;
+	font-size: 125%;
+	color: white;
+}
+.content label {
+	margin-top: 15px;
+	font: 19px Verdana;
+}
+
+footer .container .sitemap .leftpart{
+	float: left;
+	
+}
+footer .container .sitemap .rightpart{
+	float: right;
+	margin-right: 40px;
+}
+footer ul li {
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 1px;
+}
+.line {
+	border-left: 2px solid #ccc; /* Параметры линии */ 
+    margin-left: 5px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */ 
+}

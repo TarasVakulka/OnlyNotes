@@ -1,0 +1,9 @@
+{
+    "name": "OnlyNotes",
+    "description": "The best to-do list app in the history of the world",
+    "version": "0.0.1",
+    "dependencies": {
+      "mongoose": "3.6.x"
+    }
+  }
+  
