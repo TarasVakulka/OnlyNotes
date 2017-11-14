@@ -61,14 +61,15 @@ var main = function (toDoObjects) {
 			} else if($element.parent().is(":nth-child(4)")) {
 				var $inputbox1 = $('<input type="text">');
 				var $button = $("<button>+</button>");
-				var $button_delete = $("<button>Видалити дані</button>");
+				var $button_delete = $("<button id='delete'>Видалити дані</button>");
 				var $inputbox = $('<input type="text">');
-				$("main .content").append('<h>Тегі</h>');
+				$("main .content").append('<h>Теги</h>');
 				$("main .content").append($inputbox1);
 				$("main .content").append('<br/>');
                 $("main .content").append('<h>Описання</h>');
 				$("main .content").append($inputbox);
 				$("main .content").append($button);
+				$("main .content").append('<br/>');				
 				$("main .content").append($button_delete);
 				$($button).on("click", function(){
 					var description = $inputbox.val();

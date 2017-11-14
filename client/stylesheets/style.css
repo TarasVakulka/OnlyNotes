@@ -1,28 +1,22 @@
 body {
-	background:#f9e933;
 	font-size: 100%;
 }
 header {
 	background: white;
-	padding: 10px;
-	margin-bottom: 2px; 
-	
+	border-bottom: 2px solid rgb(222, 184, 135);
 }
 header h1 {
-	float: left;
-	width: 500px;
 	font-size: 2em;
-	font-family: Verdana;
 }
 header nav {
-	float: right;
-	width: 355px;
 	font-weight: bold;
 }
 main {
 	background: white;	
 }
-
+footer {
+	background: rgb(222, 184, 135);
+}
 footer .container .contact {
 	float: left;
 	width: 500px;
@@ -37,21 +31,16 @@ header .container, main .container, footer .container {
 	margin: auto;
 }
 h1, h2, h3, h4, h5 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 p, nav, ul  {
-	font-family: 'Droid Sans', sans-serif;
 	font-size: 1.2em;
 }
 header .container {
-	padding: 35px;
-}
-footer h5, p {
-	padding: 4px;
+	padding: 30px;
 }
 a  {
-	color: red;
+	color: rgb(151, 137, 120);
 	text-decoration: none;
 
 }
@@ -67,6 +56,9 @@ main .container{
 	padding-top: 13px;
 
 }
+main .content {
+	padding-top: 10px;
+}
 
 .tabs a span{
 	display: inline-block;
@@ -75,7 +67,6 @@ main .container{
 	height: 30px;
 	margin-right: 10px;
 	text-align: center;
-	font: 24px Arial;
 	font-weight: bold;
 	background: #ddd;
 	padding: 5px;
@@ -83,10 +74,10 @@ main .container{
 .tabs a span.active{
 	background: #eee;
 }
-
 .content ul {
 	list-style-type: circle;
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .content input {
 	width: 240px;
@@ -107,7 +98,16 @@ main .container{
 }
 .content label {
 	margin-top: 15px;
-	font: 19px Verdana;
+}
+.content h:first-of-type {
+	margin-right: 48px;
+}
+.content h:last-of-type {
+	margin-right: 7px;
+}
+#delete {
+	width: 190px;
+	margin-top: 40px;
 }
 
 footer .container .sitemap .leftpart{
@@ -122,6 +122,9 @@ footer ul li {
 	font-weight: bold;
 	font-size: 0.9em;
 	padding: 1px;
+}
+.sitemap h5 {
+	margin-bottom: 0;
 }
 .line {
 	border-left: 2px solid #ccc; /* Параметры линии */ 
