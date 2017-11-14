@@ -61,6 +61,7 @@ var main = function (toDoObjects) {
 			} else if($element.parent().is(":nth-child(4)")) {
 				var $inputbox1 = $('<input type="text">');
 				var $button = $("<button>+</button>");
+				var $button_delete = $("<button>Видалити дані</button>");
 				var $inputbox = $('<input type="text">');
 				$("main .content").append('<h>Тегі</h>');
 				$("main .content").append($inputbox1);
@@ -68,19 +69,32 @@ var main = function (toDoObjects) {
                 $("main .content").append('<h>Описання</h>');
 				$("main .content").append($inputbox);
 				$("main .content").append($button);
+				$("main .content").append($button_delete);
 				$($button).on("click", function(){
 					var description = $inputbox.val();
 					var tags = $inputbox1.val().split(",");
 					var newToDo = {"description": description, "tags": tags};
-					$.post("/todos.json", newToDo, function (result) {
+					$.post("/todos", newToDo, function (result) {
 						console.log(result);
-						toDoObjects.push(newToDo);
+						toDoObjects = result;
 						toDos = toDoObjects.map(function (toDo) {
 							return toDo.description;
                         });
-                    });
+					});
 					$inputbox.val('');
 					$inputbox1.val(''); 
+				});
+				$($button_delete).on("click", function (){
+					$.ajax({
+						"url" : "/todosdelete",
+						"type": "DELETE",
+					  }).done(function (response) {
+						console.log(response);
+						toDoObjects = [];
+						toDos = [];
+					  }).fail(function (err) {
+						console.log(err);
+					  });					  
 				});
 				console.log("Click on tab 4");
 			}
